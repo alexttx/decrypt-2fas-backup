@@ -18,7 +18,6 @@
 import argparse
 import json
 import base64
-import pprint
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.hashes import SHA256
@@ -45,7 +44,7 @@ def main():
     aesgcm = AESGCM(key)
     credentials_dec = aesgcm.decrypt(nonce, credentials_enc, None)
     credentials_dec = json.loads(credentials_dec)
-    pprint.pprint(credentials_dec)
+    print(json.dumps(credentials_dec, indent=2, sort_keys=True))
 
 if __name__ == "__main__":
     main()
