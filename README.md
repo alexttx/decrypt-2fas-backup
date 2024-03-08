@@ -2,7 +2,7 @@
 
 [2FAS app](https://2fas.com/) encrypted export decryption tool.
 
-Forked from ()[https://github.com/wodny/decrypt-2fas-backup].
+Forked from <https://github.com/wodny/decrypt-2fas-backup>.
 
 ## Usage
 
